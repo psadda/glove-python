@@ -7,8 +7,7 @@ import sys
 from setuptools import Command, Extension, setup, find_packages
 from setuptools.command.test import test as TestCommand
 
-
-def define_extensions(cythonize=False):
+def define_extensions(cythonize=True):
 
     compile_args = ['-fopenmp',
                     '-ffast-math']
